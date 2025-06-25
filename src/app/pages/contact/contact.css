@@ -4,3 +4,60 @@ h1{
     font-family: 'Georgia', serif;
     padding: 20px;
 }
+
+
+.contact-form-container {
+  background-color: #fdf8f3;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Georgia', serif;
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 2em;
+  color: #333;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-form button {
+  background-color: #c09a73;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #a87f59;
+}
