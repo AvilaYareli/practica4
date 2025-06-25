@@ -1,0 +1,22 @@
+<h1>Nuestros productos</h1>
+<img src="/img/ban.png" alt="Moto">
+<section class="productos">
+    @for(producto of productos; track producto.id){
+        <article class="producto">
+            <img [src]="producto.imagen" [alt]="producto.nombre">
+            <h3>{{producto.nombre}}</h3>
+            <p>{{producto.descripcion}}</p>
+            <strong>{{producto.precio}}</strong>
+            <br>
+         <button class="ver-mas-btn" (click)="verMas(producto.id)">
+          {{ productoExpandido === producto.id ? 'Ver menos' : 'Ver más' }}
+        </button>
+        @if (productoExpandido===producto.id) {
+          <div class="detalles-adicionales">
+            <p><strong>Descripcion</strong>{{producto.descripcionCompleta}}</p>
+          </div>
+        }
+      </article>
+    }
+</section>
+
